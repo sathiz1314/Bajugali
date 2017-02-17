@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_dark"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bajugalilogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splash_logo_height"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:src="@drawable/bajugali_logo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_emailFld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bajugalilogo"
+            android:hint="@string/email_or_phone"
+            android:textColorHint="@color/text_hint_color"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/emailFld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bajugalilogo"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:theme="@style/EditLabel" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/textInputLayout_passFld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout_emailFld"
+            android:hint="@string/password"
+            android:textColorHint="@color/text_hint_color"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+
+                android:id="@+id/passFld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textInputLayout_emailFld"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:theme="@style/EditLabel" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout_passFld"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_bg_global"
+            android:onClick="submit"
+            android:text="@string/login"
+            android:textColor="@color/button_text_color" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/continueBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/edittextgreybg"
+            android:text="@string/forgot_password"
+            android:textColor="@color/text_hint_color" />
+
+        <TextView
+            android:id="@+id/newsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotPassword"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittextgreybg"
+            android:onClick="textSignUp"
+            android:text="@string/newhere_signup"
+            android:textColor="@color/text_hint_color" />
+
+    </RelativeLayout>
+</LinearLayout>

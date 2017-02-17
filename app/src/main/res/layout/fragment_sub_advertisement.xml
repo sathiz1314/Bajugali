@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pyramidions.bajugali.fragments.SubAdvertisement">
+<android.support.v7.widget.RecyclerView
+    android:layout_above="@+id/bt_subAdv_Submit"
+    android:id="@+id/subAdv_recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:textColor="@color/colorWhite"
+        android:background="#00bcd4"
+        android:text="@string/submit_ad"
+        android:id="@+id/bt_subAdv_Submit"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

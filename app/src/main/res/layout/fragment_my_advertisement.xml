@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pyramidions.bajugali.fragments.MyAdvertisement">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabsAdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/main_color"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+    <android.support.v4.view.ViewPager
+        android:layout_above="@+id/bt_Adv_submit"
+        android:layout_below="@+id/tabsAdv"
+        android:id="@+id/viewpagerAdv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_Adv_submit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_bg_global"
+        android:text="@string/submit_view_adv"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_Adv_rent_sale"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_Adv_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg_global"
+        android:text="@string/rent_sale"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

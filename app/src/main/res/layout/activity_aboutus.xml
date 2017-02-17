@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:minHeight="?android:attr/actionBarSize"
+    android:background="@color/main_color">
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleheader"
+        android:textSize="16sp"
+        android:text="About us"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_action_back"
+        android:id="@+id/back"
+        android:layout_marginLeft="16dp"/>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/header">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:scaleType="fitXY"
+    android:src="@mipmap/coverpic"
+    android:id="@+id/aboutpic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BajuGali.com will be a one stop solution for all your daily needs. With a touch of your finger, you can hand over your problem, from buying retail goods to all house-hold services, to us and we will execute it to perfection.We will be mobile based service solution targeted to eliminate all the hassles that persists to get retail goods delivered or services done. We will also provide you with the opportunity to connect with us and serve the society and be rewarded. BajuGali.com will make the dream of connecting the masses throughout the nation come true. Our vision to “Ease your Life in a touch” will penetrate through urban as well as rural India."
+        android:layout_below="@+id/aboutpic"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textview1"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/textview2"
+        android:text="Together we can and we will."
+        android:layout_below="@+id/textview1"/>
+</RelativeLayout>
+</RelativeLayout>

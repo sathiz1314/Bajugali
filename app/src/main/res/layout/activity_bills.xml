@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/headview"
+        android:id="@+id/bill_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/linearLayout_TotalDue"
+        android:id="@+id/headview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7AAA" />
+
+    <LinearLayout
+      
+        android:id="@+id/linearLayout_TotalDue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/total_due" />
+
+        <TextView
+            android:id="@+id/tv_TotalDue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" />
+
+        <Button
+
+            android:id="@+id/button_Paid"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#1B5E20"
+            android:text="@string/paid"
+            android:textColor="#FFFFFF" />
+
+        <Button
+
+            android:id="@+id/button_Pay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#cf1c1c"
+            android:text="@string/paid_pay"
+            android:textColor="#FFFFFF"
+            />
+
+
+    </LinearLayout>
+
+  <!--  <android.support.v7.widget.CardView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/horizontal_margin_ten">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Header"
+                android:gravity="center_horizontal"
+                android:layout_margin="6dp"
+                android:id="@+id/headertext"
+                android:textAllCaps="true"
+                android:textColor="#000000"/>
+            <View
+                android:layout_below="@+id/headertext"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/headview"
+                android:background="#7AAA"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headview"
+                android:id="@+id/linearmonth">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Month"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/month"
+                    android:layout_below="@+id/headview"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:id="@+id/billmonth"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearmonth"
+                android:id="@+id/linearamountdue">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Due"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/amountdue"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@+id/month"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/billamountdue"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@+id/month"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearamountdue"
+                android:id="@+id/linearduedate">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/duedate"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/billduedate"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid / Pay Now"
+                android:background="#cf1c1c"
+                android:padding="5dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/pay"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@+id/linearduedate"
+                android:layout_alignRight="@+id/headertext"
+                android:layout_alignEnd="@+id/headertext" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>-->
+
+
+</RelativeLayout>

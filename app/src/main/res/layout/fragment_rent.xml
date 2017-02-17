@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pyramidions.bajugali.fragments.Rent">
+
+    <TextView
+        android:textColor="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/horizontal_margin_ten"
+        android:layout_marginRight="@dimen/horizontal_margin_ten"
+        android:layout_marginTop="@dimen/vertical_margin_ten"
+        android:text="@string/rent_sale" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/horizontal_margin_ten"
+        android:layout_marginRight="@dimen/horizontal_margin_ten"
+        android:layout_marginTop="@dimen/vertical_margin_ten"
+        android:orientation="horizontal">
+
+        <RadioGroup
+
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:buttonTint="@color/main_color"
+                android:layout_marginRight="@dimen/vertical_margin_ten"
+                android:text="@string/rents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:buttonTint="@color/main_color"
+                android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                android:text="@string/sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/border_background"
+        android:layout_marginLeft="@dimen/horizontal_margin_twenty"
+        android:layout_marginRight="@dimen/horizontal_margin_twenty"
+        android:layout_marginTop="@dimen/vertical_margin_twenty"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:text="Rs .23,99,000/-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:textColor="@color/colorWhite"
+        android:text="@string/clear"
+        android:background="@color/colorBlue"
+        android:layout_marginTop="@dimen/vertical_margin_ten"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

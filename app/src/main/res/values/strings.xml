@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">BajuGali </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="email_or_phone">Email ID/ Phone Number</string>
+    <string name="password">Password</string>
+    <string name="newhere_signup">New Here ? SignUp</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="continues">Continue</string>
+    <string name="register">Register</string>
+    <string name="Enter">Enter Your Mobile Number</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string name="headerName">Name</string>
+    <string name="bills">bills</string>
+    <string name="events">events</string>
+    <string name="aminities">amenities &amp; facilities</string>
+    <string name="feedback">submit feedback / query</string>
+    <string name="advertisement">Advertisement corner</string>
+    <string name="apartment">Apartment: Zogojo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_otp">Enter Your Otp</string>
+    <string name="enter_oldPassword">Enter Old Password</string>
+    <string name="enter_newPassword">Enter New Password</string>
+    <string name="change">Change</string>
+    <string name="send">Send</string>
+    <string name="enter_confirmPass">ConfirmPassword</string>
+    <string name="noticeboard">NOTICEBOARD</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="total_due">Total Due</string>
+    <string name="paid">Paid</string>
+    <string name="pay">Pay Now</string>
+    <string name="paid_pay">Paid / Pay Now</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="flat">Flat</string>
+    <string name="apartment_name">Apartment Name</string>
+    <string name="idproof">ID ProofType</string>
+    <string name="idproofnumber">ID ProofNumber</string>
+    <string name="bajucredits">BajuCredits</string>
+    <string name="baju_deals">Baju Deals</string>
+    <string name="committee_members">Commitee Members</string>
+    <string name="designation">Designation</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_number">Order Number</string>
+    <string name="order_item">Order Item</string>
+    <string name="order_amount">Order Amount</string>
+    <string name="submit_view_adv">SUBMIT / VIEW MY ADS</string>
+    <string name="rent_sale">RENT / SALE MY FLAT</string>
+    <string name="submit_ad">Submit AD</string>
+    <string name="del_ad">Delete Ad</string>
+    <string name="rents">Rents</string>
+    <string name="sale">Sale</string>
+    <string name="clear">Clear</string>
+    <string name="amenities_name">Amenities Name</string>
+    <string name="description">Description</string>
+    <string name="first_shift">First Shift</string>
+    <string name="second_shift">Second Shift</string>
+    <string name="working_days">Working Days</string>
+    <string name="rules"><![CDATA[Rules & Regulations]]></string>
+    <string name="available_booking">Available for Booking</string>
+    <string name="price">Price(INR)</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="terms_condition">By signing up, you agree to our Terms &amp; Conditions.</string>
+    <string name="noticeboard_name">Notice Name</string>
+    <string name="noticeboard_subject">Notice Subject</string>
+    <string name="my_apartment">My Apartment</string>
+    <string name="apartment_comple_details">Apartment Complex Details</string>
+    <string name="my_profile">My Profile</string>
+    <string name="timings">Timings</string>
+    <string name="fees">Fees (INR)</string>
+    <string name="ticket">Ticket</string>
+    <string name="submit_date">Submit Date</string>
+    <string name="assigned_to">Assigned To</string>
+    <string name="resolution_comment">Resolution Comment</string>
+    <string name="status">Status</string>
+    <string name="resolved_on">Resolved On</string>
+    <string name="subject">Subject</string>
+    <string name="submit_newrequest">Submit New Request</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="promote_my_business">+ Promote My Business</string>
+    <string name="title">Title</string>
+    <string name="category">Category</string>
+    <string name="budjet">Budjet(INR)</string>
+    <string name="submit_for_approval">Submit For Approval</string>
+    <string name="display_contact">Display Contact Number</string>
+    <string name="i_wish">I wish to put my flat on:</string>
+    <string name="login">LOGIN</string>
+    <string name="ads_date">Advertisement Date</string>
+
+    <string name="submit">Submit</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="end">---------------------END---------------------</string>
+    <string name="correction">*Incase of any corrections, please \"Submit a Request\" from the Home Screen. Inconvenience is deeply regretted.</string>
+
+
+</resources>

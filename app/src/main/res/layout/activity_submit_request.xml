@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_submit_request"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pyramidions.bajugali.activities.SubmitRequest">
+
+    <include
+        android:id="@+id/submitrrequestToolbar"
+        layout="@layout/toolbar"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/submitrrequestRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerview"
+        android:layout_below="@+id/submitrrequestToolbar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:id="@+id/footerview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/submit_NewRequest"
+        android:layout_marginTop="5dp"
+        android:background="#7AAA" />
+
+    <Button
+        android:onClick="submit_NewRequest"
+        android:id="@+id/submit_NewRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/vertical_margin_ten"
+        android:layout_marginLeft="@dimen/horizontal_margin_ten"
+        android:layout_marginRight="@dimen/horizontal_margin_ten"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_bg_global"
+        android:text="@string/submit_newrequest"
+        android:textColor="@color/colorWhite" />
+</RelativeLayout>

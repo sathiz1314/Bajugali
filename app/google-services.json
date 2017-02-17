@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "768087681631",
+    "firebase_url": "https://bajugali-149908.firebaseio.com",
+    "project_id": "bajugali-149908",
+    "storage_bucket": "bajugali-149908.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768087681631:android:f1bdbb884f3add4d",
+        "android_client_info": {
+          "package_name": "com.pyramidions.bajugali"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768087681631-h329jthilk63217fabtkptv1jddddgs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkM9aqvmnypsTcoOwc-3rh_TcrmNDhK2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

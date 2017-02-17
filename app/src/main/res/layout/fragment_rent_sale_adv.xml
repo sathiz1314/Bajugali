@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pyramidions.bajugali.fragments.RentSaleAdvFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_Footer_RentSale">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_margin_ten"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                android:layout_marginRight="@dimen/horizontal_margin_ten"
+                android:text="@string/i_wish"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                android:layout_marginRight="@dimen/horizontal_margin_ten"
+                android:layout_marginTop="@dimen/vertical_margin_ten"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner_RentSaleData"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="@dimen/vertical_margin_ten">
+
+                </android.support.v7.widget.AppCompatSpinner>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewRentSale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_margin_ten"
+                android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                android:layout_marginRight="@dimen/horizontal_margin_ten"
+                android:layout_marginTop="@dimen/vertical_margin_ten"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/vertical_margin_ten"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_RentSale_PriceLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/price"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/ed_RentSale_Price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_RentSale_DescriptionLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vertical_margin_ten"
+                        android:text="@string/description"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_RentSale_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="@dimen/vertical_margin_ten"
+                        android:background="@drawable/textview_border"
+                        android:gravity="start"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_Footer_RentSale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/vertical_margin_ten"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/horizontal_margin_ten"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_global"
+            android:text="@string/edit"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal_margin_ten"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_global"
+            android:text="@string/save"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</RelativeLayout>

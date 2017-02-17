@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/titleheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="amenities"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_action_left"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/amenities_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+    </android.support.v7.widget.RecyclerView>
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:layout_below="@+id/header"
+         android:id="@+id/reqlayout"
+         android:layout_marginTop="16dp"
+         android:layout_height="wrap_content">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Choose Service You are Requesting For :"
+             android:layout_marginLeft="16dp"
+             android:layout_marginRight="16dp"
+             android:id="@+id/requestfor"/>
+         <Spinner
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="16dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="8dp"
+             android:id="@+id/reqspinner">
+         </Spinner>
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:id="@+id/wenlayout"
+         android:orientation="vertical"
+         android:layout_below="@+id/reqlayout"
+         android:layout_marginTop="16dp"
+         android:layout_height="wrap_content">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Choose When U need the Service :"
+             android:layout_marginRight="16dp"
+             android:layout_marginLeft="16dp"
+             android:id="@+id/wen"/>
+         <Spinner
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="16dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="8dp"
+             android:id="@+id/wenspinner">
+         </Spinner>
+     </LinearLayout>
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#cf1c1c"
+         android:text="Submit"
+         android:id="@+id/submitreq"
+         android:textColor="#FFFFFF"
+         android:layout_marginTop="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginRight="16dp"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@+id/listofamenities"/>
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:background="@drawable/edittextborder"
+         android:id="@+id/listofamenities"
+         android:textAlignment="textStart"
+         android:gravity="start"
+         android:paddingLeft="5dp"
+         android:hint="List Of Amenities"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@+id/wenlayout"
+         android:layout_margin="16dp"/>-->
+</RelativeLayout>

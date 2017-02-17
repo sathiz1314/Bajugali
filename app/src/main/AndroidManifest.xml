@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pyramidions.bajugali">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".helpers.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_thumbnail"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.SignUp" />
+        <activity
+            android:name=".activities.SignIn"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activities.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Bills"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Events"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Amenities"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DetailBajuDeals"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContactusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DetailedeventsActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".fcm.MyFireBaseInstanceId">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Otp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NoticeBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AmenitiesDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NoticeBoardDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SubmitRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SubmitRequestDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SubmitViewAdd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SubmitViewAddDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PromoteMyBussiness"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.ForgotOtp" />
+        <activity android:name=".activities.ForgotChangePassword"></activity>
+    </application>
+
+</manifest>

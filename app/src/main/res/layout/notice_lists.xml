@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/notice_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/vertical_margin_ten"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+          <!--  <TextView
+                android:id="@+id/noticeboardNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noticeboard_name"
+                android:textStyle="bold"
+                android:visibility="gone" />-->
+
+            <TextView
+
+                android:gravity="center_vertical"
+                android:text="hai"
+                android:id="@+id/noticeboardName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/noticeboardNameTitle"
+                android:layout_toRightOf="@+id/noticeboardNameTitle"
+                android:textColor="@color/black_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+           <!-- <TextView
+                android:id="@+id/noticeboardDescriptiontitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noticeboardNameTitle"
+                android:layout_marginTop="@dimen/vertical_margin_ten"
+                android:text="@string/noticeboard_subject"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/noticeboardDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/noticeboardName"
+                android:layout_alignStart="@+id/noticeboardName"
+                android:layout_below="@+id/noticeboardName"
+                android:layout_marginTop="@dimen/vertical_margin_ten"
+                android:text="nanmre"
+                android:textStyle="bold"
+                android:visibility="gone" />-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

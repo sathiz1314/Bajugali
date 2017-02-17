@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pyramidions.bajugali.fragments.SubmitAd">
+
+
+    <LinearLayout
+     android:layout_marginLeft="@dimen/horizontal_margin_ten"
+     android:layout_marginRight="@dimen/horizontal_margin_ten"
+     android:layout_marginBottom="@dimen/vertical_margin_ten"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentBottom="true"
+     android:id="@+id/linearLayouts"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+
+     <Button
+         android:text="@string/del_ad"
+         android:layout_marginRight="@dimen/horizontal_margin_ten"
+         android:textColor="@color/colorWhite"
+         android:background="@color/colorBlue"
+         android:layout_weight="1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <Button
+         android:text="@string/submit_ad"
+         android:layout_marginLeft="@dimen/horizontal_margin_ten"
+         android:textColor="@color/colorWhite"
+         android:background="@color/colorBlue"
+         android:layout_weight="1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+ </LinearLayout>
+
+    <ScrollView
+
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_SubmitAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/building" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/edit" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+
+                    app:srcCompat="@drawable/camera" />
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                android:layout_marginRight="@dimen/horizontal_margin_ten"
+                android:layout_marginTop="@dimen/vertical_margin_ten"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                android:id="@+id/ed_SubmitAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                android:layout_marginRight="@dimen/horizontal_margin_ten"
+                android:layout_marginTop="@dimen/vertical_margin_ten"
+                android:hint="Description" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/vertical_margin_ten"
+                android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                android:layout_marginRight="@dimen/horizontal_margin_ten"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Agreement Dates"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/vertical_margin_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+
+                        android:background="@drawable/border_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                            android:src="@drawable/calender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Start Date"
+                            />
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                            android:textStyle="bold"
+                            android:text="Start Date"
+                            android:id="@+id/tv_AgreeStartDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@drawable/border_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginLeft="@dimen/horizontal_margin_ten"
+                            android:src="@drawable/calender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            />
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            android:text="End Date"
+                            android:id="@+id/tv_AgreeEndDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

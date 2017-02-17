@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/horizontal_margin_ten">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headview">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/DateCreate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headview"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Create" />
+
+                <TextView
+                    android:id="@+id/NoticeDateCreate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headview"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Expiry"
+                    android:id="@+id/DateExpiry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/NoticeDateExpiry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headview"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:id="@+id/headview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/headertext"
+                android:background="#7AAA" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/linearmonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headview">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headview"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="NoticeName" />
+
+                <TextView
+                    android:id="@+id/NoticeName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearamountdue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearmonth">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/Summary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/month"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Notice Summary" />
+
+                <TextView
+                    android:id="@+id/NoticeSummary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/month"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearduedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearamountdue">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/Description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Notice Description" />
+
+                <TextView
+                    android:id="@+id/NoticeDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearamountdue">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/ContactUserId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Notice Contact UserId" />
+
+                <TextView
+                    android:id="@+id/NoticeContactUserId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearamountdue">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/contactpersonname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Contact Person Name" />
+
+                <TextView
+                    android:id="@+id/Noticecontactpersonname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearamountdue">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/contactpersonnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Contact Person Number" />
+
+                <TextView
+                    android:id="@+id/Noticecontactpersonnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearamountdue">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/contactpersonemail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Contact Person Email" />
+
+                <TextView
+                    android:id="@+id/Noticecontactpersonemail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!-- <Button
+                 android:visibility="gone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Paid / Pay Now"
+                 android:background="#cf1c1c"
+                 android:padding="5dp"
+                 android:layout_marginBottom="16dp"
+                 android:id="@+id/pay"
+                 android:textColor="#FFFFFF"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginRight="16dp"
+                 android:layout_below="@+id/linearduedate"
+                 android:layout_alignRight="@+id/headertext"
+                 android:layout_alignEnd="@+id/headertext" />-->
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
